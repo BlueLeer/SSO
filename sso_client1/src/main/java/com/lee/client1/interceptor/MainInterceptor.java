@@ -45,12 +45,13 @@ public class MainInterceptor implements HandlerInterceptor {
 
         // : 检查地址栏中是否携带了token信息
         String token = request.getParameter("token");
+        // 校验token
 
         // : 重定向到SSO(统一认证中心)
         StringBuilder sb = new StringBuilder();
         sb.append(constant.getSERVER_HOST())
                 .append("/checkLogin?redirectUrl=")
-                .append(constant.getCLIENT_HOST() + request.getRequestURI());
+                .append(constant.getCLIENT_HOST() + request.getRequestURI()); // 注:getRequestURI()返回除去域名(IP)部分的路径
 
         response.sendRedirect(sb.toString());
         return false;
