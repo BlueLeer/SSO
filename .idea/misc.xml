@@ -2,17 +2,19 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/sso_client1" />
+    <file type="web" url="file://$PROJECT_DIR$/sso_client2" />
     <file type="web" url="file://$PROJECT_DIR$/sso_server" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/sso_server/pom.xml" />
         <option value="$PROJECT_DIR$/sso_client1/pom.xml" />
+        <option value="$PROJECT_DIR$/sso_server/pom.xml" />
+        <option value="$PROJECT_DIR$/sso_client2/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
