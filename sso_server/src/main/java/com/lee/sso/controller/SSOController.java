@@ -62,11 +62,11 @@ public class SSOController {
         if ("lee".equals(username) && "123".equals(password)) {
             // 1. 创建令牌
             String token = UUID.randomUUID().toString().replaceAll("-", "");
-            // 2. 创建全局回话,将令牌信息放入全局回话中
+            // 2. 创建全局回话,将令牌信息放入全局会话中
             session.setAttribute("token", token);
             // 3.需要将令牌放入到数据库中
             MockDatabase.TOKEN_CENTER.add(token);
-            // 4.充电向到以前客户端请求的地址
+            // 4.重向到以前客户端请求的地址
             model.addAttribute("token", token);
             return "redirect:" + redirectUrl;
         }

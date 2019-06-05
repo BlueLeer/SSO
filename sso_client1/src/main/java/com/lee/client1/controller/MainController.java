@@ -26,6 +26,11 @@ public class MainController {
         return "main";
     }
 
+    /**
+     * 登出方法
+     * @param session
+     * @return
+     */
     @RequestMapping("/logout")
     @ResponseBody
     public String logout(HttpSession session) {
