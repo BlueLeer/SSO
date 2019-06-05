@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/sso_client1/sso_client1.iml" filepath="$PROJECT_DIR$/sso_client1/sso_client1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sso_client2/sso_client2.iml" filepath="$PROJECT_DIR$/sso_client2/sso_client2.iml" />
       <module fileurl="file://$PROJECT_DIR$/sso_server/sso_server.iml" filepath="$PROJECT_DIR$/sso_server/sso_server.iml" />
     </modules>
   </component>

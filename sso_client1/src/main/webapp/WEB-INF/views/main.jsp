@@ -7,8 +7,9 @@
 <title>客户关系管理系统</title>
 </head>
 <body>
-<h1>这是客户管理管理页面的首页</h1>
+<h1>这是Client1的首页</h1>
 <h2>是放在/WEB-INF/views中的JSP页面</h2>
+
 <a href="${serverLogOutUrl}" >退出</a>
 </body>
 </html>
