@@ -51,7 +51,7 @@ public class MainInterceptor implements HandlerInterceptor {
         String token = request.getParameter("token");
         // 校验token
         if (!StringUtils.isEmpty(token)){
-            String verfiyUrl = constant.getSERVER_HOST()+constant.getSSO_TOKEN_VERIFY();
+            String verifyUrl = constant.getSERVER_HOST()+constant.getSSO_TOKEN_VERIFY();
             Map<String,String>  params = new HashMap<>();
             // 添加待验证的token
             params.put("token",token);
@@ -60,7 +60,7 @@ public class MainInterceptor implements HandlerInterceptor {
             // 添加sessionId
             params.put("sessionId",session.getId());
 
-            String s = HttpUtil.sendHttpRequest(verfiyUrl, params);
+            String s = HttpUtil.sendHttpRequest(verifyUrl, params);
             if ("true".equals(s)){
                 // 如果返回true字符串,说明是由统一认证中心产生的
                 session.setAttribute("isLogin",true);
